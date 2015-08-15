@@ -5,6 +5,9 @@
     > Created Time: Fri Aug 14 16:18:44 2015
  ************************************************************************/
 
+/* Solve the Hanoi problem by using stacks
+ * i.e. Write a program to move the disks form the first tower to the last using stacks */
+
 import java.util.Arrays;
 import java.util.Stack;
 import java.util.Comparator;
