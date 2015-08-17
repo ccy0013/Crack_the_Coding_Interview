@@ -34,7 +34,7 @@ public class Solution{
 		}
 
 		int counter = 0;
-		while( !s.empty() && s.peek().intValue() < e ){
+		while( !s.empty() && s.peek().intValue() > e ){
 			buffer.push( s.pop() );
 			counter++;
 		}
