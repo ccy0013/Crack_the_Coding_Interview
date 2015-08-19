@@ -128,16 +128,16 @@ class BinaryTreeNode{
 	public void printHelper( BinaryTreeNode root ){
 
 		if( null == root ){
-			System.out.print( "/" + " " );
+			System.out.print( "#" + " " );
 			return;
 		}
 
 		System.out.print( root.data + " " );
 
-		if( null != root.leftChild ||  null != root.rightChild ){
+	//	if( null != root.leftChild ||  null != root.rightChild ){
 			printHelper( root.leftChild );
 			printHelper( root.rightChild );
-		}
+	//	}
 	}
 
 	public void printByLayer(){
