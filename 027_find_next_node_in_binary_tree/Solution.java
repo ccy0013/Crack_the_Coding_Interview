@@ -28,15 +28,12 @@ public class Solution{
 			return null;
 
 		if( null == root.right ){
-			Node temp = root.parent;
-			Node temp2 = root;
+			Node temp = root;
 
-			while( isRightChild( temp, temp2 ) ){
-				temp2 = temp;
+			while( isRightChild( temp.parent, temp ) )
 				temp = temp.parent;
-			}
 
-			return temp;
+			return temp.parent;
 		}
 		else
 			return findNextDescendant( root.right );
