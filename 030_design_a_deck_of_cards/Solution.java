@@ -72,7 +72,7 @@ class CardDeck {
 	}
 
 	boolean isWin() {
-
+		return false;
 	}
 
 	int score() {
